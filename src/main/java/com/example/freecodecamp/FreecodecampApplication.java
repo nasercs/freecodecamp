@@ -17,7 +17,7 @@ public class FreecodecampApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("https://www.freecodecamp.org'");
+                registry.addMapping("/**").allowedOrigins("https://www.freecodecamp.org");
             }
         };
     }
