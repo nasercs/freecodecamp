@@ -7,7 +7,7 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class DateResponse {
-    private static final DateTimeFormatter formatter = DateTimeFormatter.RFC_1123_DATE_TIME.withZone(ZoneId.of("GMT"));
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E, dd MMM yyyy HH:mm:ss OOOO").withZone(ZoneId.of("GMT"));
     private static final DateTimeFormatter parser = DateTimeFormatter.ofPattern("[dd MMMM yyyy, OOOO][yyyy-MM-dd]");
 
     private final Instant instant;
